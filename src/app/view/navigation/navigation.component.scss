@@ -1,11 +1,41 @@
 #header {
-    height: 60px;
-    width: calc(100% - 400px);
-    background: rgb(100, 211, 224);
+    height: 70px;
+    background: black;
     display: flex;
-    padding: 30px 300px 30px 150px;
+    padding: 30px 300px 30px 50px;
+}
+
+#header-left {
+    display: flex;
+    //justify-content: center; // this will center the child elements horizontally
+    align-items: center; // this will center the child elements vertically
 }
 
 #title {
     font-size: 30px;
+    //margin-top: 30px;
+    color: white;
+    font-family: "Courier New"
+}
+
+#NBA-Logo {
+    //margin-top: 10px;
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#NBA-Logo:hover {
+    transform: scale(1.5);
+}
+
+#sub-pages {
+    display: flex;
+    align-items: center;
+}
+
+#sub-page {
+    color: white;
+    margin-left: 60px;
+    font-size: 20px;
+    font-family: "Inter";
 }
