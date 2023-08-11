@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TeamsComponent } from './view/teams/teams.component';
+import { TeamsListComponent } from './view/teams/teams-list/teams-list.component';
+import { TeamsMapComponent } from './view/teams/teams-map/teams-map.component';
 import { CustomMaterialModule } from './custom-material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationComponent } from './view/navigation/navigation.component';
@@ -11,7 +12,8 @@ import { NavigationComponent } from './view/navigation/navigation.component';
 @NgModule({
   declarations: [
     AppComponent,
-    TeamsComponent,
+    TeamsListComponent,
+    TeamsMapComponent,
     NavigationComponent
   ],
   imports: [

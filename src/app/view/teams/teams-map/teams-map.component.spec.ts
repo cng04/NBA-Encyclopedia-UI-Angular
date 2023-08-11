@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TeamsComponent } from './teams.component';
+import { TeamsMapComponent } from './teams-map.component';
 
-describe('TeamsComponent', () => {
-  let component: TeamsComponent;
-  let fixture: ComponentFixture<TeamsComponent>;
+describe('TeamsMapComponent', () => {
+  let component: TeamsMapComponent;
+  let fixture: ComponentFixture<TeamsMapComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TeamsComponent]
+      declarations: [TeamsMapComponent]
     });
-    fixture = TestBed.createComponent(TeamsComponent);
+    fixture = TestBed.createComponent(TeamsMapComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -4,8 +4,16 @@
         <img id="NBA-Logo" src="../assets/images/nba-logo_2x.png" width="80px" onclick="window.location ='https://www.sportingnews.com/ca/nba?gr=www'">
     </div>
     <div id="sub-pages">
-        <button mat-button id="sub-page">Teams</button>
-        <button mat-button id="sub-page">Players</button>
+        <button mat-button (click)="goTo('home-page')" id="sub-page">Home</button>
+        <button mat-button [matMenuTriggerFor]="teamsmenu" id="sub-page">Teams</button>
+        <mat-menu #teamsmenu="matMenu">
+            <button mat-menu-item (click)="goTo('teams-list')">NBA Teams</button>
+            <button mat-menu-item (click)="goTo('teams-map')">Map of NBA Teams</button>
+        </mat-menu>
+        <button mat-button [matMenuTriggerFor]="playersmenu" id="sub-page">Players</button>
+        <mat-menu #playersmenu="matMenu">
+            <button mat-menu-item (click)="goTo('players')">Build your own Starting Lineup</button>
+        </mat-menu>
         <button mat-button id="sub-page">Awards</button>
     </div>
     <div id="header-right">
