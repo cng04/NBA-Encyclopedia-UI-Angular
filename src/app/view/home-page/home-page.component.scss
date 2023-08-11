@@ -1,7 +1,12 @@
-#home-view {
+#home-view{
     display: flex;
-    height: 80vh;
+    flex-direction: column; // flex boxes are arranged vertically
 }
+
+#body-view {
+    display: flex;
+    height: 70vh; // sets body-view div to 70% of the viewport height
+} 
 
 #home-image {
     display: flex;
@@ -14,4 +19,7 @@
     max-width: 100%;
     max-height: 100%;
     margin-left: 300px;
+}
+
+#footer {
 }

@@ -12,9 +12,12 @@
         </mat-menu>
         <button mat-button [matMenuTriggerFor]="playersmenu" id="sub-page">Players</button>
         <mat-menu #playersmenu="matMenu">
-            <button mat-menu-item (click)="goTo('players')">Build your own Starting Lineup</button>
+            <button mat-menu-item (click)="goTo('players')">Build Your Own Roster</button>
         </mat-menu>
-        <button mat-button id="sub-page">Awards</button>
+        <button mat-button [matMenuTriggerFor]="awardsmenu" id="sub-page">Awards</button>
+        <mat-menu #awardsmenu="matMenu">
+            <button mat-menu-item (click)="goTo('awards')">View NBA Awards</button>
+        </mat-menu>
     </div>
     <div id="header-right">
     </div>

@@ -5,6 +5,7 @@ import { PageNotFoundComponent } from './view/page-not-found/page-not-found.comp
 import { TeamsListComponent } from './view/teams/teams-list/teams-list.component';
 import { TeamsMapComponent } from './view/teams/teams-map/teams-map.component';
 import { PlayersComponent } from './view/players/players.component';
+import { AwardsComponent } from './view/awards/awards.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "players",
     component: PlayersComponent
+  },
+  {
+    path: "awards",
+    component: AwardsComponent
   },
   {
     path: '',
