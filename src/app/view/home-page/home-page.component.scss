@@ -1,25 +1,59 @@
-#home-view{
+#image-view {
+    width: 100vw;
+    position: relative; // position an element based on current position without changing layout
     display: flex;
-    flex-direction: column; // flex boxes are arranged vertically
 }
 
-#body-view {
-    display: flex;
-    height: 70vh; // sets body-view div to 70% of the viewport height
+#raptors-champ {
+    width: 50%;
+    height: 575px;
+    //background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/images/raptors-NBA-Champs.jpeg"); // sets background image of div
 } 
 
-#home-image {
+#curry-mvp {
+    width: 50%;
+    height: 575px;
+    //background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/images/curry-mvp.jpeg");
+}
+
+#page-title {
+    position: absolute; // positioned element based on closest positioned ancestor (home-view)
+    top: 50%; 
+    left: 50%; // top: 50% and left 50% moves the child element to the center of its parent (home-view)
+    transform: translate(-50%, -50%); // centers the center of child at the center of the parent component
+    border: 4px solid white; // sets border width and color of div
+    font-size: 70px;
+    color: white;
+    font-family: "Monaco";
+    background-color: black;
+    padding: 40px; // creates space around an element's context inside of the definied borders 
+    // padding-left, padding-right, padding-bottom and padding-left are paddings for each side of an element
+}
+
+
+#page-intro {
+    padding-top: 20px;
+    height: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
+    position: relative;
 }
 
-#raptors-champion {
-    max-width: 100%;
-    max-height: 100%;
-    margin-left: 300px;
+#trophy {
+    width: 496px;
+    height: 503px;
+    background-image: url("../../../assets/images/finals-trophy.png");
+    margin-left: 50px;
 }
 
-#footer {
+#page-desc {
+    position: relative;
+    border: 2px solid black;
+    width: 40%;
+
 }
