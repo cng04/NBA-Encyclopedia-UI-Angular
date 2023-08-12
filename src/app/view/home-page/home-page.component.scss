@@ -39,21 +39,27 @@
 
 #page-intro {
     padding-top: 20px;
-    height: 350px;
+    padding-bottom: 20px;
+    height: 400px;
     display: flex;
     position: relative;
 }
 
 #trophy {
     width: 496px;
-    height: 503px;
+    height: 400px;
+    // need to resize background-image
     background-image: url("../../../assets/images/finals-trophy.png");
     margin-left: 50px;
 }
 
 #page-desc {
     position: relative;
+    padding: 30px 30px 30px 30px;
     border: 2px solid black;
     width: 40%;
+}
 
+#desc-title {
+    
 }
