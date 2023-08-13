@@ -38,27 +38,26 @@
 
 
 #page-intro {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     height: 400px;
     display: flex;
     position: relative;
 }
 
 #trophy {
-    width: 496px;
-    height: 400px;
     // need to resize background-image
-    background-image: url("../../../assets/images/finals-trophy.png");
+    //background-image: url("../../../assets/images/finals-trophy.png");
 }
 
 #page-desc {
     position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 30px 30px 30px 30px;
     border: 2px solid black;
     width: 40%;
-    display: block;
-    margin-left: 2.5%;
 }
 
 #desc-title {
