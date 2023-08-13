@@ -50,7 +50,6 @@
     height: 400px;
     // need to resize background-image
     background-image: url("../../../assets/images/finals-trophy.png");
-    margin-left: 50px;
 }
 
 #page-desc {
@@ -58,8 +57,14 @@
     padding: 30px 30px 30px 30px;
     border: 2px solid black;
     width: 40%;
+    display: block;
 }
 
 #desc-title {
-    
+   font-family: "Lato"; 
+   font-size: 40px;
+}
+
+ul li {
+    margin-bottom: 3%;
 }

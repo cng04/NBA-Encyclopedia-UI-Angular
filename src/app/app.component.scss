@@ -1,4 +1,35 @@
 #footer {
     background-color: black;
     height: 150px;
+    width: 100%;
+    //padding: 25px 25vw 25px 25vw; // top right bottom left padding
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
 }
+
+#footer-view {
+    position: relative;
+    display: flex;
+    column-gap: 100px; // sets the gap between columns in a multi-column layout (e.g. grid, flexbox)
+    //padding: 25px 300px 25px 300px;
+}
+
+#footer a {
+    font-family: "Sans Serif";
+    color: white;
+    text-decoration: underline; // underlines the text
+    transition: 0.1s ease; // transition time into hover CSS properties
+}
+
+a:hover { // target the element when mouse is hovering over it
+    font-size: 17px;
+}
+
+a:active { // target the element when cursor clicks on it
+    font-size: 18px;
+}
+
+
+
