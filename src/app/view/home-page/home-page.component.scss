@@ -97,3 +97,18 @@ ul li {
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 1440px) {
+   
+    #page-intro {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 70vh; // on smaller screen set height to 70vh
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        column-gap: 30px;
+    }
+    
+}
