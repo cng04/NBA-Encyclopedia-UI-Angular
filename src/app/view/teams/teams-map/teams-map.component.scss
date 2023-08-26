@@ -1,0 +1,17 @@
+#teams-map-container {
+    width: 100vw;
+    height: 135vh;
+}
+
+@media only screen and (max-width: 1440px) {
+   
+    #teams-map-container {
+        width: 100vw;
+        height: 118vh;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
