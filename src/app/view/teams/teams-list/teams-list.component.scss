@@ -3,11 +3,89 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
 }
 
 #teams-table {
-    width: 30%;
-    height: 70%;
+    display: flex;
+    width: 60%;
+    height: 90%;
     border: 2px solid black;
+}
+
+#eastern-conference-title, #western-conference-title {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+#eastern-conference-title {
+    border-right: 2px dashed black;
+}
+
+#conference-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+
+#conference-title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+#conference-image-container {
+    position: absolute;
+    left: 15%;
+}
+
+#conference-teams {
+    padding-top: 5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#division-container {
+    display: flex;
+    flex-direction: column;
+    //margin-bottom: 35%;
+}
+
+#division-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#division {
+    font-size: 18px;
+}
+
+#division-teams-container {
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#division-team-info {
+    display: flex;
+    column-gap: 5%;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}
+
+#team-name, #team-location {
+    font-size: 16px;
 }
