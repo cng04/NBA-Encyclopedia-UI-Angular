@@ -6,6 +6,7 @@ import { TeamsListComponent } from './view/teams/teams-list/teams-list.component
 import { TeamsMapComponent } from './view/teams/teams-map/teams-map.component';
 import { PlayersComponent } from './view/players/players.component';
 import { AwardsComponent } from './view/awards/awards.component';
+import { PageUnderConstructionComponent } from './view/page-under-construction/page-under-construction.component';
 
 
 const routes: Routes = [
@@ -27,13 +28,18 @@ const routes: Routes = [
   },
   {
     path: "awards",
-    component: AwardsComponent
+    component: PageUnderConstructionComponent
+    //component: AwardsComponent
   },
   {
     path: '',
     redirectTo: "home-page",
     pathMatch: "full",
   },
+  {
+    path: "**",
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({
